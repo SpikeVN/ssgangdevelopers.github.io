@@ -1,23 +1,144 @@
 :root {
-    --color-text: #ccc;
-    --color-background: #261f2c;
+	--color-text: #ccc;
+	--color-background: #261f2c;
+	--color-link: #239adf;
 }
 
 body {
-    color: var(--color-text);
-    background-color: var(--color-background);
+	color: var(--color-text);
+	background-color: var(--color-background);
+}
+
+a {
+	color: var(--color-link);
 }
 
 .slogan {
-    margin-top: 5em;
-    margin-left: 1em;
-    margin-right: 1em;
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
+	margin-top: 3em;
+	margin-left: 1em;
+	margin-right: 1em;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+}
 
-}
+
 #bottom-slogan {
-    font-weight: normal;
+	font-weight: normal;
 }
+
+.skip {
+	text-align: center;
+}
+
+.titlebar h1 {
+	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
+	margin-bottom: 0px;
+}
+
+.titlebar hr {
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 0.5em;
+	border: 0px;
+	border-top: 1px solid #ccc;
+}
+
+.iota .goback {
+	text-align: center;
+}
+
+.content {
+	font-family: "Open Sans", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content h1 {
+	text-align: center;
+}
+
+
+.iota .btn-primary:hover {
+    color: #E6EAEF;
+    background-color: #52C11F;
+}
+
+.iota .btn-primary {
+    color: #52C11F;
+    border-color: #52C11F;
+}
+
+.iota .btn {
+    display: inline-block;
+    margin: 6px;
+    font-size: inherit;
+    line-height: 1.42;
+    padding: 0.6em 1.6em;
+    font-weight: normal;
+    border-width: 2px;
+    border-style: solid;
+    background: transparent;
+    border-radius: 1.46em;
+    cursor: pointer;
+    font-family: "Montserrat", "Avenir Next", Avenir, sans-serif;
+    user-select: none;
+    vertical-align: bottom;
+    position: relative;
+    border-style: solid;
+    overflow: hidden;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button,
+a {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+button {
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    font-family: "Montserrat", sans-serif;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+.iota .btn-primary:after {
+    background-color: #52C11F;
+}
+
+.iota .btn:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    border-radius: 1.46em;
+    transform: scaleX(0.7);
+    opacity: 0;
+    transition: transform 0.8s, opacity 0.3s;
+}
+
